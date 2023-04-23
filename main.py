@@ -14,3 +14,8 @@ with col2:
         providing services as an Automation Tester for Morgan Stanley.
         """
     st.info(intro)
+
+content = """
+Below You can find some of the apps I have built in Python. Feel free to contact me!
+"""
+st.write(content)
