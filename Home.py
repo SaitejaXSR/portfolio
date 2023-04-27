@@ -5,25 +5,21 @@ st.set_page_config(layout='wide')
 col1, col2 = st.columns(2)
 
 with col1:
-    st.image('images/photo.png')
+    st.image('images/photo.png', width=400)
 
 with col2:
     st.title('Sai Teja Chary')
     intro = """
         Hi, I am Sai Teja! I am a Python programmer. I graduated in 2020 with a Bachelor of Technology 
         in Electrical and Electronics Engineering from Jawaharlal Nehru Technological University. 
-        Currently working as Senior Software Engineer at Capgemini, providing services as an Automation Tester for Morgan Stanley.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-         dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Currently working as Senior Software Engineer at Capgemini providing services as a GUI Automation Tester.
         """
     st.info(intro)
 
 content = """
 Below You can find some of the apps I have built in Python. Feel free to contact me!
 """
-st.write(content)
+st.write(f"<h4 style='text-align: center;'>{content}</h4>", unsafe_allow_html=True)
 
 col3, empty_col, col4 = st.columns([1.5, 0.5, 1.5])
 
